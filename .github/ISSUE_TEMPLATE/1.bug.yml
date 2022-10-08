@@ -1,0 +1,77 @@
+name: 🐛 Bug Report
+description: Problems and issues with the project.
+title: "Bug Report: "
+labels: ["type: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please provide a searchable summary of the issue in the title above ⬆️."
+
+  - type: textarea
+    attributes:
+      label: What happened? 😣
+      description: Please provide as much information as possible regarding the problem.
+      placeholder: >
+        Please provide the context in which the problem occur, along with a video or screenshot if possible.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What expected to happen 🤔
+      description: What do you think went wrong?
+      placeholder: >
+        Please explain why you think the behaviour is erroneous. It is extremely helpful if you copy&paste
+        the fragment of logs showing the exact error messages or wrong behaviour and screenshots for
+        UI problems or a video of you demonstrating the problem. You can include files by
+        dragging and dropping them here.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Step to reproduce 👣
+      description: >
+        What should we do to reproduce the problem? If you are not able to provide a reproducible case,
+        please open a [Discussion](https://github.com/amplication/amplication/discussions) instead.
+      placeholder: >
+        Please make sure you provide a reproducible step-by-step case of how to reproduce the problem
+        as minimally and precisely as possible. Keep in mind we do not have access to your local environment.
+        Remember that non-reproducible issues will be closed! Opening a discussion is recommended as a
+        first step.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Version
+      description: >
+        In which version of the project does this problem occur?
+
+  - type: textarea
+    attributes:
+      label: Environment 🌎
+      description: Please describe the enviroment which the problem occur.
+      placeholder: "
+        Node version:
+        Docker version:
+        OS platform:
+        OS version:
+        "
+
+  - type: dropdown
+    attributes:
+      label: Are you willing to fix the bug?
+      description:
+      multiple: true
+      options:
+        - "Yes, I'm willing to fix the bug"
+        - "No, I'm just reporting the bug"
+
+  - type: markdown
+    attributes:
+      value: <br>
+
+  - type: markdown
+    attributes:
+      value: By submitting this issue I agree to follow this project's [Code of Conduct]()
